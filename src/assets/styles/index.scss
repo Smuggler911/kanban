@@ -1,9 +1,9 @@
-$background: rgb(234, 237, 242);
+$background: white;
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Druk Wide Bold', sans-serif;
+  font-family: 'Poppins';
   font-weight: normal;
   background-color: $background;
   -webkit-touch-callout: none;
@@ -15,11 +15,5 @@ $background: rgb(234, 237, 242);
 
 }
 @font-face {
-  font-family: "Druk Wide Bold";
-  src: url("https://db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot");
-  src: url("https://db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold")format("svg");
+  font-family: "Poppins";
 }

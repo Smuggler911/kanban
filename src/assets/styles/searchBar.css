@@ -1,0 +1,33 @@
+.searchBar-wrapper {
+  display: flex;
+  margin-left: 15rem;
+  width: 100vw;
+  box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.1);
+  height: 5rem;
+}
+.searchBar-wrapper .searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+}
+.searchBar-wrapper .searchBar .searchBar-input input[type=search] {
+  width: 20rem;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.08);
+  height: 2.5rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+.searchBar-wrapper .searchBar .searchBar-input input[type=search]:focus {
+  outline: none;
+}
+.searchBar-wrapper .searchBar .searchBar-input input[type=search]::-webkit-search-decoration,
+.searchBar-wrapper .searchBar .searchBar-input input[type=search]::-webkit-search-cancel-button,
+.searchBar-wrapper .searchBar .searchBar-input input[type=search]::-webkit-search-results-button,
+.searchBar-wrapper .searchBar .searchBar-input input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/*# sourceMappingURL=searchBar.css.map */

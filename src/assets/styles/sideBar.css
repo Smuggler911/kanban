@@ -1,0 +1,43 @@
+.sidebar-wrapper {
+  position: absolute;
+  box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.1);
+  width: 15rem;
+  height: 100vh;
+  top: 0;
+}
+.sidebar-wrapper .sidebar {
+  margin-top: 1rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-wrapper .sidebar .sidebar-logo {
+  margin-left: 4em;
+}
+.sidebar-wrapper .sidebar .sidebar-logo h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+.sidebar-wrapper .sidebar .sidebar-items {
+  margin-left: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: none;
+}
+.sidebar-wrapper .sidebar .sidebar-items a {
+  background: none;
+  color: black;
+  text-decoration: none;
+}
+.sidebar-wrapper .sidebar .sidebar-items a:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+.sidebar-wrapper .sidebar .sidebar-items a:focus {
+  color: gray;
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=sideBar.css.map */

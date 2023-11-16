@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
@@ -6,9 +5,9 @@ import {
 } from "react-router-dom";
 import Home from "../pages/Home";
 
- export const appRoutes = createBrowserRouter([
+export const appRoutes = createBrowserRouter([
     {
         path: "/",
-        element:<Home/>,
+        element: <Home/>,
     },
 ]);
