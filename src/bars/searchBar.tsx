@@ -1,5 +1,6 @@
 import React, {useRef} from "react";
 import '../assets/styles/searchBar.scss';
+import {NavLink} from "react-router-dom";
 
 export default function SearchBar() {
 
@@ -26,6 +27,11 @@ export default function SearchBar() {
                     <div className={"searchBar-input"}>
                         <input onFocus={focusSearch} onBlur={blurSearch} ref={searchbar} type={"search"}
                                placeholder={"search..."}/>
+                    </div>
+                    <div className={"searchBar-profile"}>
+                     <NavLink to='/login'>
+                         Login
+                     </NavLink>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,56 @@
-.test {
-  width: 100%;
+.mainPage-wrapper {
   display: flex;
-  margin-left: 20rem;
-  margin-top: 20rem;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rem;
+}
+.mainPage-wrapper .mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainPage-wrapper .mainPage .mainPage-header {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.mainPage-wrapper .mainPage .mainPage-header h1 {
+  background: none;
+  font-weight: bold;
+  font-size: 4rem;
+}
+.mainPage-wrapper .mainPage .mainPage-header p {
+  background: none;
+  font-size: 2rem;
+}
+.mainPage-wrapper .mainPage .mainPage-button {
+  background: none;
+  margin-top: 2rem;
+}
+.mainPage-wrapper .mainPage .mainPage-button a {
+  width: 50rem;
+  border-radius: 1rem;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+.mainPage-wrapper .mainPage .mainPage-button a:hover {
+  transform: scale(110%);
+  transition: all 0.3s;
+}
+.mainPage-wrapper .mainPage .mainPage-image {
+  background: none;
+  margin-left: 50rem;
+}
+.mainPage-wrapper .mainPage .mainPage-image img {
+  background: none;
+  width: 20rem;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -1,6 +1,68 @@
-.test{
-  width: 100%;
+$bgButton: black;
+$fColorButton: white;
+
+.mainPage-wrapper {
   display: flex;
-  margin-left: 20rem;
-  margin-top:20rem;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rem;
+
+  & .mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .mainPage-header {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+
+      & h1 {
+        background: none;
+        font-weight: bold;
+        font-size: 4rem;
+      }
+
+      & p {
+        background: none;
+        font-size: 2rem;
+      }
+    }
+
+    & .mainPage-button {
+      background: none;
+      margin-top: 2rem;
+
+      & a{
+        width: 50rem;
+        border-radius: 1rem;
+        background: $bgButton;
+        color: $fColorButton;
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-decoration: none;
+          &:hover {
+            transform: scale(110%);
+            transition: all .3s;
+          }
+
+      }
+    }
+
+    & .mainPage-image {
+      background: none;
+      margin-left: 50rem;
+
+      & img {
+        background: none;
+        width: 20rem;
+      }
+    }
+  }
 }
+
+

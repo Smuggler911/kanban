@@ -12,12 +12,11 @@ $activeColor: gray;
 
   & .sidebar {
     margin-top: 1rem;
-    gap: 3rem;
+    gap: 10rem;
     display: flex;
     flex-direction: column;
 
     & .sidebar-logo {
-
       margin-left: calc(12em / 3);
 
       & h1 {
@@ -30,13 +29,14 @@ $activeColor: gray;
       margin-left: calc(12em / 3);
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 2.5rem;
       background: none;
 
       & a {
         background: none;
         color: $fColor;
         text-decoration: none;
+        font-size: 1.3rem;
 
         &:hover {
           transform: scale(110%);

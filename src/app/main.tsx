@@ -8,8 +8,6 @@ import SearchBar from "../bars/searchBar";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <SearchBar/>
-        <SideBar/>
         <RouterProvider router={appRoutes}/>
     </React.StrictMode>,
 )

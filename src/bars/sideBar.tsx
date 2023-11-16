@@ -3,6 +3,7 @@ import '../assets/styles/sideBar.scss'
 
 type links = {
     name: string,
+    link:string,
 }
 
 interface items {
@@ -14,12 +15,16 @@ const item = (): items => ({
 
         {
             name: "Profile",
+            link:"#",
         },
         {
-            name: "Dashboard"
+            name: "Dashboard",
+            link:"/dashboard",
+
         },
         {
-            name: "Tasks"
+            name: "Tasks",
+            link:"#"
         },
     ]
 })
@@ -35,7 +40,7 @@ export default function SideBar() {
                 </div>
                 <div className={"sidebar-items"}>
                     {items.map(item => (
-                        <a href={"#"}>
+                        <a href={item.link}>
                             {item.name}
                         </a>
                     ))}
