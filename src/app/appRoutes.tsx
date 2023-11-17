@@ -1,12 +1,12 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom/client";
 import {
     createBrowserRouter,
 } from "react-router-dom";
-import Home from "../pages/Home";
-import Dashboard from "../pages/Dashboard/Dashboard";
-import Login from "../pages/Login";
+import {Homepage} from "../pages/home";
+import {Dashboard} from "../pages/Dashboard";
+import {Login} from "../pages/Login";
 import {ElementLayout} from "./layouts/elementLayout";
+import {SignUp} from "../pages/signUp";
 
 export const appRoutes = createBrowserRouter([
     {
@@ -14,16 +14,21 @@ export const appRoutes = createBrowserRouter([
         errorElement: <div>error</div>,
         children: [
             {
+
                 path: "/",
-                element: <Home/>,
+                Component: Homepage,
             },
             {
                 path: "/dashboard",
-                element: <Dashboard/>
+                Component: Dashboard,
             },
             {
                 path: "/login",
-                element: <Login/>,
+                Component: Login,
+            },
+            {
+                path:"/signup",
+                Component:SignUp
             }
 
         ],

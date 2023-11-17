@@ -3,7 +3,7 @@ import '../assets/styles/sideBar.scss'
 
 type links = {
     name: string,
-    link:string,
+    link: string,
 }
 
 interface items {
@@ -14,17 +14,17 @@ const item = (): items => ({
     links: [
 
         {
-            name: "Profile",
-            link:"#",
+            name: "Home",
+            link: "/",
         },
         {
             name: "Dashboard",
-            link:"/dashboard",
+            link: "/dashboard",
 
         },
         {
             name: "Tasks",
-            link:"#"
+            link: "#"
         },
     ]
 })
@@ -32,21 +32,21 @@ const item = (): items => ({
 export default function SideBar() {
     const items = item().links;
     return (
-        <body>
-        <div className={"sidebar-wrapper"}>
-            <div className={"sidebar"}>
-                <div className={"sidebar-logo"}>
-                    <h1>Cane</h1>
-                </div>
-                <div className={"sidebar-items"}>
-                    {items.map(item => (
-                        <a href={item.link}>
-                            {item.name}
-                        </a>
-                    ))}
+        <>
+            <div className={"sidebar-wrapper"}>
+                <div className={"sidebar"}>
+                    <div className={"sidebar-logo"}>
+                        <h1>Cane</h1>
+                    </div>
+                    <div className={"sidebar-items"}>
+                        {items.map((item, key) => (
+                            <a href={item.link} key={key}>
+                                {item.name}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
-        </body>
+        </>
     )
 }

@@ -1,11 +1,10 @@
 import React from "react";
-import '../assets/styles/home.scss'
+import './home.scss'
 import {NavLink} from "react-router-dom";
 
 
-export default function Home() {
+export function Homepage() {
     return (
-        <body>
         <div className={"mainPage-wrapper"}>
             <div className={"mainPage"}>
                 <div className={"mainPage-header"}>
@@ -15,14 +14,13 @@ export default function Home() {
                     </p>
                 </div>
                 <div className={"mainPage-button"}>
-                    <NavLink  to={'/dashboard'}>
+                    <NavLink to={'/dashboard'}>
                         Create new Board
                     </NavLink>
                 </div>
 
             </div>
         </div>
-        </body>
     )
 
 }

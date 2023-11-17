@@ -2,9 +2,15 @@
   "users": [
     {
       "id": 1,
-      "name": "fellowgram",
+      "login": "fellowgram",
       "email": "fellowgram@gmail.com",
       "password": "kil124"
+    },
+    {
+      "login": "fellowgram",
+      "email": "fellowgram@gmail.com",
+      "password": "kil45",
+      "id": 2
     }
   ]
 }

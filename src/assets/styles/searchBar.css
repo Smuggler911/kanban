@@ -5,7 +5,7 @@
 .searchBar-wrapper {
   display: flex;
   margin-left: 15rem;
-  width: 100vw;
+  width: 1680px;
   box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.1);
   height: 5rem;
 }
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
+  margin-left: 5rem;
 }
 .searchBar-wrapper .searchBar .searchBar-input input[type=search] {
   width: 20rem;
@@ -32,6 +32,35 @@
 .searchBar-wrapper .searchBar .searchBar-input input[type=search]::-webkit-search-results-button,
 .searchBar-wrapper .searchBar .searchBar-input input[type=search]::-webkit-search-results-decoration {
   display: none;
+}
+.searchBar-wrapper .searchBar .searchbar-profile {
+  display: flex;
+  margin-left: 60rem;
+}
+.searchBar-wrapper .searchBar .searchbar-profile a {
+  text-decoration: none;
+  color: black;
+  background: none;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+.searchBar-wrapper .searchBar .searchbar-profile a:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+.searchBar-wrapper .searchBar .searchbar-profile a:last-child {
+  text-decoration: none;
+  color: black;
+  background: none;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+.searchBar-wrapper .searchBar .searchbar-profile p {
+  font-size: 1rem;
+  padding: 0.7rem;
+  background: none;
 }
 
 /*# sourceMappingURL=searchBar.css.map */
