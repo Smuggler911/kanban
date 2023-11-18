@@ -30,6 +30,7 @@ class UserStore {
     event.preventDefault();
     try {
       await axios.post(" http://localhost:8000/users", this.user);
+      window.location.href = "/login";
     } catch (error: unknown) {
       if (axios.isAxiosError(error)) {
         const axiosError = error as AxiosError;

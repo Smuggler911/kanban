@@ -1,5 +1,91 @@
-.signUp-form{
+
+.signUp-form {
   display: flex;
-  margin-left: 30rem;
+  align-items: center;
+  justify-content: center;
   margin-top: 10rem;
+
+  & .form-wrapper {
+
+    width: auto;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, .1);
+    gap: 3rem;
+
+    & .form-login {
+
+      & input[type='text'] {
+        border: none;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, .1);
+        width: 30rem;
+        height: 3rem;
+        border-radius: 0.9rem;
+        padding-left: 1rem;
+
+        &:focus {
+          transition: all .6s ease-in-out;
+          background: black;
+          outline: none;
+          color: white;
+          font-size: 1.2rem;
+        }
+
+      }
+    }
+    & .form-email{
+
+      & input[type='email'] {
+        border: none;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, .1);
+        width: 30rem;
+        height: 3rem;
+        border-radius: 0.9rem;
+        padding-left: 1rem;
+
+        &:focus {
+          transition: all .6s ease-in-out;
+          background: black;
+          outline: none;
+          color: white;
+          font-size: 1.2rem;
+        }
+
+      }
+    }
+    & .form-pass{
+
+      & input[type='password'] {
+        border: none;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, .1);
+        width: 30rem;
+        height: 3rem;
+        border-radius: 0.9rem;
+        padding-left: 1rem;
+
+        &:focus {
+          transition: all .6s ease-in-out;
+          background: black;
+          outline: none;
+          color: white;
+          font-size: 1.2rem;
+        }
+
+      }
+    }
+    & .form-submit{
+       & button{
+         width: 30rem;
+         background: black;
+         border-radius: 0.9rem;
+         border: none;
+         color: white;
+         font-size: 1.2rem;
+         padding: 1rem;
+       }
+    }
+
+  }
 }

@@ -1,7 +1,56 @@
-.login-form {
+form {
   display: flex;
-  margin-left: 30rem;
+  align-items: center;
+  justify-content: center;
   margin-top: 10rem;
+}
+form .login-form {
+  width: auto;
+  height: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  gap: 3rem;
+}
+form .login-form .form-email input[type=email] {
+  border: none;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  height: 3rem;
+  border-radius: 0.9rem;
+  padding-left: 1rem;
+}
+form .login-form .form-email input[type=email]:focus {
+  transition: all 0.6s ease-in-out;
+  background: black;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form .login-form .form-password input[type=password] {
+  border: none;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  height: 3rem;
+  border-radius: 0.9rem;
+  padding-left: 1rem;
+}
+form .login-form .form-password input[type=password]:focus {
+  transition: all 0.6s ease-in-out;
+  background: black;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}
+form .login-form .form-button button {
+  width: 30rem;
+  background: black;
+  border-radius: 0.9rem;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=login.css.map */

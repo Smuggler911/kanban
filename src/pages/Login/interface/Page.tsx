@@ -1,30 +1,28 @@
-import React from "react";
 import "./login.scss";
-import axios from "axios";
+import Auth from "./store";
+import React, { ChangeEvent, FormEvent } from "react";
+import { observer } from "mobx-react";
 
-export function Login() {
-  // const CheckMail = (serverUsers: any, formData: any) => {
-  //     const user = serverUsers.find((user: { email: any; }) => user.email == formData.email);
-  //     if (user) return user;
-  // }
-  // const onSubmit = async (formData: any) => {
-  //
-  //     const user = await axios
-  //         .get("http://localhost:8000/users")
-  //         .then((res) => CheckMail(res.data, formData));
-  //
-  //     if (user) alert("email exists");
-  //     await axios.post("http://localhost:8000/users", formData).then((res) => {
-  //             console.log(res.data);
-  //         });
-  // };
-
+export const Login = observer(() => {
+  const { handleLogin, CheckMail, auth } = Auth;
+  const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    handleLogin(event);
+  };
+  const OnFormSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    CheckMail(event);
+  };
   return (
     <>
-      <form>
+      <form onSubmit={OnFormSubmit}>
         <div className={"login-form"}>
           <div className={"form-email"}>
-            <input type={"email"} name={"email"} placeholder={"email"} />
+            <input
+              type={"email"}
+              name={"email"}
+              placeholder={"email"}
+              onChange={onInputChange}
+            />
           </div>
           <div className={"form-password"}>
             <input
@@ -40,4 +38,4 @@ export function Login() {
       </form>
     </>
   );
-}
+});

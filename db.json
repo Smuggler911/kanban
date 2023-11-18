@@ -7,10 +7,16 @@
       "password": "kil124"
     },
     {
-      "login": "fellowgram",
-      "email": "fellowgram@gmail.com",
-      "password": "kil45",
+      "login": "fella",
+      "email": "fella@gmail.com",
+      "password": "kilpoint90",
       "id": 2
+    },
+    {
+      "login": "druk",
+      "email": "druk@gmail.com",
+      "password": "45667",
+      "id": 3
     }
   ]
 }
