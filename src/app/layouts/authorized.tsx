@@ -1,10 +1,10 @@
 import SideBar from "../../bars/sideBar";
-import SearchBar from "../../bars/searchBar";
 import { Outlet } from "react-router-dom";
+import AuthorizedSearchBar from "../../bars/ Authorized/AuthorizedSearchBar";
 
-export const BaseElementLayout = (
+export const Authorized = (
   <div className={"container"}>
-    <SearchBar />
+    <AuthorizedSearchBar />
     <SideBar />
     <Outlet />
   </div>

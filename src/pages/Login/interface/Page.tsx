@@ -4,7 +4,8 @@ import React, { ChangeEvent, FormEvent } from "react";
 import { observer } from "mobx-react";
 
 export const Login = observer(() => {
-  const { handleLogin, CheckMail, auth } = Auth;
+  const { handleLogin, CheckMail, auth, check } = Auth;
+
   const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     handleLogin(event);
   };
@@ -12,6 +13,7 @@ export const Login = observer(() => {
     event.preventDefault();
     CheckMail(event);
   };
+
   return (
     <>
       <form onSubmit={OnFormSubmit}>
@@ -32,7 +34,10 @@ export const Login = observer(() => {
             />
           </div>
           <div className={"form-button"}>
-            <button type={"submit"}>logIn</button>
+            <button type={"submit"} value={"true"} name={"button"}>
+              logIn
+            </button>
+            <span>{String(check.authorized)}</span>
           </div>
         </div>
       </form>
