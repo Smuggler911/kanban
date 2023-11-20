@@ -1,5 +1,11 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .login-wrapper {
-  margin-left: 70rem;
+  margin-left: 69rem;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=authorizedSearchBar.css.map */

@@ -5,6 +5,8 @@ import { Dashboard } from "../pages/Dashboard";
 import { Login } from "../pages/Login";
 import { BaseElementLayout } from "./layouts/elementLayout";
 import { SignUp } from "../pages/signUp";
+import { Board } from "../pages/Board";
+import { Kanban } from "../pages/Board";
 import { Authorized } from "./layouts/authorized";
 const authorized = Boolean(localStorage.getItem("authorized?"));
 export const appRoutes = createBrowserRouter([
@@ -27,6 +29,14 @@ export const appRoutes = createBrowserRouter([
       {
         path: "/signup",
         Component: SignUp,
+      },
+      {
+        path: "/Board",
+        Component: Board,
+      },
+      {
+        path: "kanban/:kanbanId",
+        Component: Kanban,
       },
     ],
   },

@@ -1,0 +1,122 @@
+.createNewBoard-section {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 15rem;
+  border-bottom: 1px black solid;
+  background: none;
+}
+.createNewBoard-section .createNewBoard-button {
+  padding: 1rem;
+  display: flex;
+  margin-left: 5rem;
+}
+.createNewBoard-section .createNewBoard-button button {
+  width: 15rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+.createNewBoard-section .createNewBoard-button button:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+.createNewBoard-section .createNewBoard-header {
+  padding: 3rem;
+  display: flex;
+}
+.createNewBoard-section .createNewBoard-header p {
+  font-size: 1.5rem;
+}
+
+.allKanbanBoards-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 3rem;
+  padding-left: 20rem;
+  background: none;
+}
+.allKanbanBoards-section .allKanbanBoards-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  gap: 2rem;
+}
+.allKanbanBoards-section .allKanbanBoards-items button {
+  width: auto;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+.allKanbanBoards-section .allKanbanBoards-items button:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+
+.CreateNewBoard-form {
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  display: none;
+  background: none;
+}
+.CreateNewBoard-form form {
+  width: 30rem;
+  background: #171717;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.CreateNewBoard-form form .form-exit {
+  background: none;
+  margin-top: 1rem;
+  margin-left: 20rem;
+  margin-bottom: 2rem;
+}
+.CreateNewBoard-form form .form-exit button {
+  background: none;
+  border: none;
+}
+.CreateNewBoard-form form .form-exit button img {
+  background: none;
+}
+.CreateNewBoard-form form .form-exit button:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+.CreateNewBoard-form form .form-header {
+  background: none;
+  margin-bottom: 2rem;
+}
+.CreateNewBoard-form form .form-header h1 {
+  color: white;
+  background: none;
+}
+.CreateNewBoard-form form .form-name {
+  background: none;
+  margin-bottom: 2rem;
+}
+.CreateNewBoard-form form .form-name input[type=text] {
+  border: none;
+  background: white;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+.CreateNewBoard-form form .form-button {
+  background: none;
+  margin-bottom: 5rem;
+}
+.CreateNewBoard-form form .form-button button {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.CreateNewBoard-form form .form-button button:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=Board.css.map */

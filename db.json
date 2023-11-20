@@ -18,5 +18,12 @@
       "password": "45667",
       "id": 3
     }
+  ],
+  "kanbanBoards": [
+    {
+      "id": 1,
+      "name": "testBoard ",
+      "owner": "fellowgram"
+    }
   ]
 }

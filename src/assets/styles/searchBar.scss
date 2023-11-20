@@ -1,7 +1,10 @@
 * {
   font-family: Poppins;
 }
-
+body{
+  overflow-x: hidden;
+  width: 100%;
+}
 .searchBar-wrapper {
   display: flex;
   margin-left: 15rem;
