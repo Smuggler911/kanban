@@ -31,7 +31,7 @@ export const appRoutes = createBrowserRouter([
         Component: SignUp,
       },
       {
-        path: "/Board",
+        path: "/board",
         Component: Board,
       },
       {
