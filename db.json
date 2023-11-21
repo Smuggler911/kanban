@@ -24,6 +24,11 @@
       "id": 1,
       "name": "testBoard ",
       "owner": "fellowgram"
+    },
+    {
+      "name": "testboard2",
+      "owner": "fellowgram",
+      "id": 2
     }
   ]
 }

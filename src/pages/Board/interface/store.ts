@@ -8,7 +8,7 @@ interface kanbanBoard {
 type Data = {
   response: Array<kanbanBoard>;
 };
-class KanbanBoards {
+export default class KanbanBoards {
   static data: Data = observable({
     response: [],
   });
@@ -60,5 +60,3 @@ export class CreateKanban {
     }
   };
 }
-
-export default KanbanBoards;

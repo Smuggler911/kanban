@@ -1,7 +1,7 @@
 .createNewBoard-section {
   display: flex;
-  margin-top: 3rem;
-  margin-left: 15rem;
+  margin-top: 2.5rem;
+  margin-left: 9rem;
   border-bottom: 1px black solid;
   background: none;
 }
@@ -31,7 +31,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   margin-top: 3rem;
-  padding-left: 20rem;
+  padding-left: 14rem;
   background: none;
 }
 .allKanbanBoards-section .allKanbanBoards-items {
@@ -40,13 +40,16 @@
   padding: 1rem;
   gap: 2rem;
 }
-.allKanbanBoards-section .allKanbanBoards-items button {
+.allKanbanBoards-section .allKanbanBoards-items a {
   width: auto;
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 1rem 1rem 1rem 5rem;
+  font-size: 1rem;
+  border: 2px solid black;
   border-radius: 0.5rem;
+  text-decoration: none;
+  color: black;
 }
-.allKanbanBoards-section .allKanbanBoards-items button:hover {
+.allKanbanBoards-section .allKanbanBoards-items a:hover {
   transform: scale(110%);
   transition: all 0.3s ease-in-out;
 }

@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+}
+
+.kanbanBoard-header {
+  background: none;
+}
+.kanbanBoard-header .kanban-name {
+  padding-left: 13rem;
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.kanbanBoard-header .kanban-name h1 {
+  background: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.kanbanBoard {
+  margin-left: 12rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 3rem;
+  height: auto;
+  background: none;
+}
+.kanbanBoard .toDo, .kanbanBoard .inProgress, .kanbanBoard .Done {
+  background: rgba(206, 206, 206, 0.46);
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 33rem;
+}
+.kanbanBoard .toDo .toDo-header, .kanbanBoard .toDo .inProgress-header, .kanbanBoard .toDo .Done-header, .kanbanBoard .inProgress .toDo-header, .kanbanBoard .inProgress .inProgress-header, .kanbanBoard .inProgress .Done-header, .kanbanBoard .Done .toDo-header, .kanbanBoard .Done .inProgress-header, .kanbanBoard .Done .Done-header {
+  background: white;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.kanbanBoard .toDo .toDo-header h1, .kanbanBoard .toDo .inProgress-header h1, .kanbanBoard .toDo .Done-header h1, .kanbanBoard .inProgress .toDo-header h1, .kanbanBoard .inProgress .inProgress-header h1, .kanbanBoard .inProgress .Done-header h1, .kanbanBoard .Done .toDo-header h1, .kanbanBoard .Done .inProgress-header h1, .kanbanBoard .Done .Done-header h1 {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=Kanban.css.map */

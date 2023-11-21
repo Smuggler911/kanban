@@ -7,6 +7,7 @@ import { CreateKanban } from "./store";
 import Cross from "./assets/cross-svgrepo-com.svg";
 import { Simulate } from "react-dom/test-utils";
 import blur = Simulate.blur;
+import { NavLink } from "react-router-dom";
 export const Board = observer(() => {
   const { data, getKanbanBoards } = KanbanBoards;
   window.addEventListener("load", async () => {
@@ -58,7 +59,26 @@ export const Board = observer(() => {
       <div className={"allKanbanBoards-section"} ref={allBoards}>
         <div className={"allKanbanBoards-items"}>
           {data.response.map((items, key) => (
-            <button key={key}>{items.name}</button>
+            <NavLink
+              onClick={() => {
+                localStorage.setItem("kanbanId", String(key));
+                data.response.map((item, key) => {
+                  const Key = localStorage.getItem("kanbanId");
+                  const kanbanKey = Number(Key);
+                  if (key === kanbanKey) {
+                    const dataStorage = { name: item.name, owner: item.owner };
+                    localStorage.setItem(
+                      "currentBoard",
+                      JSON.stringify(dataStorage),
+                    );
+                  }
+                });
+              }}
+              to={`../kanban/${key}`}
+              key={key}
+            >
+              {items.name}
+            </NavLink>
           ))}
         </div>
       </div>

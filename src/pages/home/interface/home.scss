@@ -6,7 +6,7 @@ $fColorButton: white;
   margin-top: 10rem;
   justify-content: center;
   align-items: center;
-  margin-left: 15rem;
+  margin-left: 3rem;
 
   & .mainPage {
     display: flex;
@@ -37,7 +37,7 @@ $fColorButton: white;
       background: none;
       margin-top: 2rem;
 
-      & a{
+      & a {
         width: 50rem;
         border-radius: 1rem;
         background: $bgButton;
@@ -45,10 +45,11 @@ $fColorButton: white;
         font-size: 1.5rem;
         padding: 1rem;
         text-decoration: none;
-          &:hover {
-            transform: scale(110%);
-            transition: all .3s;
-          }
+
+        &:hover {
+          transform: scale(110%);
+          transition: all .3s;
+        }
 
       }
     }

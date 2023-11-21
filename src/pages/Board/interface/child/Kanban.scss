@@ -1,0 +1,57 @@
+$nameBg: black;
+$nameColor: white;
+body {
+  height: 100vh;
+}
+
+.kanbanBoard-header {
+  background: none;
+
+  & .kanban-name {
+    padding-left: 13rem;
+    background-color: $nameBg;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    & h1 {
+      background: none;
+      color: $nameColor;
+
+      font-size: 1rem;
+    }
+  }
+}
+
+.kanbanBoard {
+  margin-left: 12rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 3rem;
+  height: auto;
+  background: none;
+
+  & .toDo, .inProgress, .Done {
+    background: rgba(206, 206, 206, 0.46);
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 33rem;
+
+    & .toDo-header, .inProgress-header, .Done-header {
+      background: white;
+      border-radius: 0.5rem;
+      height: 2.5rem;
+
+      box-shadow: -2px 10px 10px rgba(0, 0, 0, .1);
+
+      & h1 {
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+      }
+    }
+  }
+
+
+}

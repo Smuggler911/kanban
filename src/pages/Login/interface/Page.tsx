@@ -37,7 +37,6 @@ export const Login = observer(() => {
             <button type={"submit"} value={"true"} name={"button"}>
               logIn
             </button>
-            <span>{String(check.authorized)}</span>
           </div>
         </div>
       </form>

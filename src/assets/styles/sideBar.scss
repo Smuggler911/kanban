@@ -2,11 +2,13 @@ $fColor: black;
 $logoSize: 2em;
 $activeColor: gray;
 
-
+body{
+  height: 100vh;
+}
 .sidebar-wrapper {
   position: absolute;
   box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, .1);
-  width: 15rem;
+  width: 9.5rem;
   height: 100%;
   top: 0;
 
@@ -17,16 +19,17 @@ $activeColor: gray;
     flex-direction: column;
 
     & .sidebar-logo {
-      margin-left: calc(12em / 3);
+      margin-left: 2rem;
 
       & h1 {
+
         font-weight: bold;
         font-size: $logoSize;
       }
     }
 
     & .sidebar-items {
-      margin-left: calc(12em / 3);
+      margin-left: 2rem;
       display: flex;
       flex-direction: column;
       gap: 2.5rem;
@@ -36,7 +39,7 @@ $activeColor: gray;
         background: none;
         color: $fColor;
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1rem;
 
         &:hover {
           transform: scale(110%);

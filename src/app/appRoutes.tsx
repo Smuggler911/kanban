@@ -8,10 +8,10 @@ import { SignUp } from "../pages/signUp";
 import { Board } from "../pages/Board";
 import { Kanban } from "../pages/Board";
 import { Authorized } from "./layouts/authorized";
-const authorized = Boolean(localStorage.getItem("authorized?"));
+let authorized = localStorage.getItem("authorized?");
 export const appRoutes = createBrowserRouter([
   {
-    element: authorized ? Authorized : BaseElementLayout,
+    element: authorized == null ? BaseElementLayout : Authorized,
     errorElement: <div>error</div>,
     children: [
       {
@@ -33,6 +33,7 @@ export const appRoutes = createBrowserRouter([
       {
         path: "/board",
         Component: Board,
+        children: [],
       },
       {
         path: "kanban/:kanbanId",
