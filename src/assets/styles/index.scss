@@ -3,7 +3,7 @@ $background: white;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   background-color: $background;
   -webkit-touch-callout: none;
@@ -13,7 +13,4 @@ $background: white;
   -ms-user-select: none;
   user-select: none;
 
-}
-@font-face {
-  font-family: "Poppins";
 }

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.0.8",
     "axios": "^1.6.2",
     "mobx": "^6.11.0",
     "mobx-react": "^9.1.0",

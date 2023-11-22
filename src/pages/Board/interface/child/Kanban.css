@@ -35,6 +35,9 @@ body {
   background: white;
   border-radius: 0.5rem;
   height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .kanbanBoard .toDo .toDo-header h1, .kanbanBoard .toDo .inProgress-header h1, .kanbanBoard .toDo .Done-header h1, .kanbanBoard .inProgress .toDo-header h1, .kanbanBoard .inProgress .inProgress-header h1, .kanbanBoard .inProgress .Done-header h1, .kanbanBoard .Done .toDo-header h1, .kanbanBoard .Done .inProgress-header h1, .kanbanBoard .Done .Done-header h1 {
@@ -43,6 +46,92 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+}
+
+.header-button {
+  background: none;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+.header-button button {
+  background: none;
+  border: none;
+}
+.header-button button img {
+  background: none;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+.header-button button:hover {
+  transform: scale(110%);
+  transition: all 0.3s;
+}
+
+.createToDo {
+  position: absolute;
+  top: 0;
+  background: none;
+  display: none;
+  left: 40%;
+}
+.createToDo form {
+  background: #171717;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.createToDo form .exit-ToDoCreation {
+  background: none;
+  margin-left: 20rem;
+  padding: 1rem;
+}
+.createToDo form .exit-ToDoCreation span {
+  background: none;
+  border: none;
+}
+.createToDo form .exit-ToDoCreation span img {
+  background: none;
+}
+.createToDo form .exit-ToDoCreation span img:hover {
+  transform: scale(110%);
+  transition: all 0.3s;
+}
+.createToDo form .toDoCreation-header {
+  padding: 2rem;
+  background: none;
+  color: white;
+}
+.createToDo form .toDoCreation-header h1 {
+  color: white;
+  background: none;
+}
+.createToDo form .toDoCreation-taskInput {
+  padding: 2rem;
+  background: none;
+}
+.createToDo form .toDoCreation-taskInput textarea {
+  background: none;
+  resize: none;
+  width: 20rem;
+  height: 5rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+}
+.createToDo form .toDoCreation-submit {
+  padding: 2rem;
+  background: none;
+}
+.createToDo form .toDoCreation-submit button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+.createToDo form .toDoCreation-submit button:hover {
+  transform: scale(110%);
+  transition: all 0.3s;
 }
 
 /*# sourceMappingURL=Kanban.css.map */

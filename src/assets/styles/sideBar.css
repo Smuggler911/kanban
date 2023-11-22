@@ -10,7 +10,7 @@ body {
   top: 0;
 }
 .sidebar-wrapper .sidebar {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   gap: 10rem;
   display: flex;
   flex-direction: column;
