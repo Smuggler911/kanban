@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   font-weight: normal;
+  font-family: Inter, sans-serif;
   background-color: white;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

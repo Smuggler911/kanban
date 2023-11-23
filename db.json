@@ -30,5 +30,35 @@
       "owner": "fellowgram",
       "id": 2
     }
+  ],
+  "Board": [
+    {
+      "0": {
+        "name": "testBoard",
+        "ToDo": [
+          {
+            "task": "Сделать драг энд дроп"
+          },
+          {
+            "task": "Get a new Jeans"
+          },
+          {
+            "task": "Get a new Jeans"
+          },
+          {
+            "task": "Filler"
+          },
+          {
+            "task": "breakThe wholr leg"
+          },
+          {
+            "task": "Get frozen Movie"
+          }
+        ],
+        "InProgress": [],
+        "Done": []
+      },
+      "id": 1
+    }
   ]
 }

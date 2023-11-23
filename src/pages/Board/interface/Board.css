@@ -1,14 +1,14 @@
 .createNewBoard-section {
   display: flex;
   margin-top: 2.5rem;
-  margin-left: 9rem;
+  margin-left: 10.5rem;
   border-bottom: 1px black solid;
   background: none;
 }
 .createNewBoard-section .createNewBoard-button {
   padding: 1rem;
   display: flex;
-  margin-left: 5rem;
+  margin-left: 3.5rem;
 }
 .createNewBoard-section .createNewBoard-button button {
   width: 15rem;

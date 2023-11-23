@@ -79,6 +79,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  border-radius: 0.5rem;
 }
 .createToDo form .exit-ToDoCreation {
   background: none;
@@ -132,6 +133,35 @@ body {
 .createToDo form .toDoCreation-submit button:hover {
   transform: scale(110%);
   transition: all 0.3s;
+}
+
+.toDo-items {
+  background: none;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.toDo-items .items {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  gap: 1rem;
+}
+.toDo-items .items .item {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toDo-items .items .item p {
+  background: none;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=Kanban.css.map */

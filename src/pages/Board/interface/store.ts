@@ -4,6 +4,7 @@ import React from "react";
 interface kanbanBoard {
   name: string;
   owner: string;
+  id: number;
 }
 type Data = {
   response: Array<kanbanBoard>;

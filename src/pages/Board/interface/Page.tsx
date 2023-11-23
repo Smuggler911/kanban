@@ -8,11 +8,12 @@ import Cross from "./assets/cross-svgrepo-com.svg";
 import { Simulate } from "react-dom/test-utils";
 import blur = Simulate.blur;
 import { NavLink } from "react-router-dom";
+
 export const Board = observer(() => {
   const { data, getKanbanBoards } = KanbanBoards;
-  window.addEventListener("load", async () => {
-    await getKanbanBoards();
-  });
+
+  getKanbanBoards();
+
   const { handleInput, submitForm } = CreateKanban;
   const form = useRef<HTMLDivElement>(null);
   const header = useRef<HTMLDivElement>(null);
@@ -65,7 +66,7 @@ export const Board = observer(() => {
                 data.response.map((item, key) => {
                   const Key = localStorage.getItem("kanbanId");
                   const kanbanKey = Number(Key);
-                  if (key === kanbanKey) {
+                  if (item.id === kanbanKey + 1) {
                     const dataStorage = { name: item.name, owner: item.owner };
                     localStorage.setItem(
                       "currentBoard",
@@ -74,7 +75,7 @@ export const Board = observer(() => {
                   }
                 });
               }}
-              to={`../kanban/${key}`}
+              to={`../kanban/${items.id}`}
               key={key}
             >
               {items.name}

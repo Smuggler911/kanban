@@ -27,7 +27,7 @@ body {
   margin-top: 1rem;
   display: flex;
   gap: 3rem;
-  height: auto;
+  height:auto;
   background: none;
 
   & .toDo, .inProgress, .Done {
@@ -91,6 +91,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
+    border-radius: 0.5rem;
     & .exit-ToDoCreation{
       background: none;
       margin-left: 20rem;
@@ -148,6 +149,34 @@ body {
           transform: scale(110%);
           transition: all .3s;
         }
+      }
+    }
+  }
+}
+.toDo-items{
+  background: none;
+  padding: 2rem;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & .items {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    gap:1rem;
+    & .item {
+      width: auto;
+      height: auto;
+      padding: 1rem;
+      background:white;
+      border-radius: 0.5rem;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      & p {
+        background: none;
+        padding: 1rem;
       }
     }
   }
