@@ -23,18 +23,20 @@ body {
 }
 
 .kanbanBoard {
-  margin-left: 12rem;
+  margin-left: 10.5rem;
   margin-top: 1rem;
   display: flex;
   gap: 3rem;
-  height:auto;
+  height: auto;
   background: none;
+  transition: all 0.3s ease-in-out;
 
   & .toDo, .inProgress, .Done {
     background: rgba(206, 206, 206, 0.46);
     border-radius: 0.5rem;
     height: 100%;
-    width: 33rem;
+    width: 35rem;
+    transition: height 500ms ease;
 
     & .toDo-header, .inProgress-header, .Done-header {
       background: white;
@@ -76,7 +78,6 @@ body {
       transition: all .3s;
     }
   }
-
 }
 
 .createToDo {
@@ -92,23 +93,27 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
-    & .exit-ToDoCreation{
+
+    & .exit-ToDoCreation {
       background: none;
       margin-left: 20rem;
       padding: 1rem;
-       & span{
-         background: none;
-         border: none;
-         & img{
-           background: none;
-           &:hover{
-             transform: scale(110%);
-             transition: all .3s;
-           }
-         }
 
-       }
+      & span {
+        background: none;
+        border: none;
+
+        & img {
+          background: none;
+
+          &:hover {
+            transform: scale(110%);
+            transition: all .3s;
+          }
+        }
+      }
     }
+
     & .toDoCreation-header {
       padding: 2rem;
       background: none;
@@ -145,7 +150,8 @@ body {
         background: none;
         border: none;
         font-size: 1.5rem;
-        &:hover{
+
+        &:hover {
           transform: scale(110%);
           transition: all .3s;
         }
@@ -153,29 +159,54 @@ body {
     }
   }
 }
-.toDo-items{
+
+.toDo-items {
   background: none;
-  padding: 2rem;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 2rem 2rem;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  display: grid;
   & .items {
-    display: flex;
-    flex-direction: column;
     background: none;
-    gap:1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr ;
+    transition: all 0.3s ease-in-out;
+    gap: 1rem;
+
+
     & .item {
-      width: auto;
+      transition: all .3s;
       height: auto;
       padding: 1rem;
-      background:white;
+      background: white;
+      box-shadow: 0 -2px rgba(0, 0, 0, .1);
       border-radius: 0.5rem;
-      display:flex;
+      display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      width: 30rem;
+
+      & span {
+        margin-left: 20rem;
+
+        & img {
+          width: 1.5em;
+        }
+
+        &:hover {
+          transform: scale(110%);
+          transition: all .3s;
+        }
+      }
+
       & p {
+        text-align: center;
+        font-size: 1em;
         background: none;
+        inline-size: 30rem;
+        overflow-wrap: break-word;
         padding: 1rem;
       }
     }

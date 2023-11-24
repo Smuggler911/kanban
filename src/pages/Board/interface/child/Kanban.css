@@ -18,18 +18,20 @@ body {
 }
 
 .kanbanBoard {
-  margin-left: 12rem;
+  margin-left: 10.5rem;
   margin-top: 1rem;
   display: flex;
   gap: 3rem;
   height: auto;
   background: none;
+  transition: all 0.3s ease-in-out;
 }
 .kanbanBoard .toDo, .kanbanBoard .inProgress, .kanbanBoard .Done {
   background: rgba(206, 206, 206, 0.46);
   border-radius: 0.5rem;
   height: 100%;
-  width: 33rem;
+  width: 35rem;
+  transition: height 500ms ease;
 }
 .kanbanBoard .toDo .toDo-header, .kanbanBoard .toDo .inProgress-header, .kanbanBoard .toDo .Done-header, .kanbanBoard .inProgress .toDo-header, .kanbanBoard .inProgress .inProgress-header, .kanbanBoard .inProgress .Done-header, .kanbanBoard .Done .toDo-header, .kanbanBoard .Done .inProgress-header, .kanbanBoard .Done .Done-header {
   background: white;
@@ -137,30 +139,48 @@ body {
 
 .toDo-items {
   background: none;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 2rem 2rem;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  display: grid;
 }
 .toDo-items .items {
-  display: flex;
-  flex-direction: column;
   background: none;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: all 0.3s ease-in-out;
   gap: 1rem;
 }
 .toDo-items .items .item {
-  width: auto;
+  transition: all 0.3s;
   height: auto;
   padding: 1rem;
   background: white;
+  box-shadow: 0 -2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+}
+.toDo-items .items .item span {
+  margin-left: 20rem;
+}
+.toDo-items .items .item span img {
+  width: 1.5em;
+}
+.toDo-items .items .item span:hover {
+  transform: scale(110%);
+  transition: all 0.3s;
 }
 .toDo-items .items .item p {
+  text-align: center;
+  font-size: 1em;
   background: none;
+  inline-size: 30rem;
+  overflow-wrap: break-word;
   padding: 1rem;
 }
 

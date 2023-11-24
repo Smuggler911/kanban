@@ -1,12 +1,7 @@
-body {
-  height: 100vh;
-}
-
 .sidebar-wrapper {
   position: absolute;
-  box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.1);
   width: 10.5rem;
-  height: 100%;
+  min-height: 100vh;
   top: 0;
 }
 .sidebar-wrapper .sidebar {
@@ -23,6 +18,8 @@ body {
   font-size: 2em;
 }
 .sidebar-wrapper .sidebar .sidebar-items {
+  position: fixed;
+  top: 20%;
   margin-left: 2.5rem;
   display: flex;
   flex-direction: column;

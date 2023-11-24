@@ -5,17 +5,20 @@ import { observer } from "mobx-react";
 import plusButton from "../assets/plus-large-svgrepo-com.svg";
 import exitButton from "../assets/cross-svgrepo-com.svg";
 import Board from "./childStore";
+import deleteButton from "../assets/deleteButton.svg";
 
 export const Kanban = observer(() => {
   const { getKanbanBoards } = KanbanBoards;
-  const { getBoard, values, handleAddTask, formHandle } = Board;
+  const { getBoard, values, handleAddTask, formHandle, deleteTodoFromBoard } =
+    Board;
 
-  getKanbanBoards();
   getBoard();
+  getKanbanBoards();
 
   const kanbanData = JSON.parse(localStorage.getItem("currentBoard") || "");
   const createToDoForm = useRef<HTMLDivElement>(null);
   const boardContainer = useRef<HTMLDivElement>(null);
+
   const ExitForm = () => {
     if (createToDoForm.current !== null && boardContainer.current !== null) {
       createToDoForm.current.style.display = "none";
@@ -35,6 +38,19 @@ export const Kanban = observer(() => {
     let Id = currentBoardId + 1;
     await formHandle(event, Id, currentBoardId);
   };
+
+  const todoItem = useRef<HTMLDivElement>(null);
+
+  const deleteFromBoard = async (task: string) => {
+    const currentBoardId = Number(localStorage.getItem("kanbanId") || "");
+    let Id = currentBoardId + 1;
+    if (todoItem.current !== null) {
+      todoItem.current.style.transform = "translateX(10%)";
+      todoItem.current.style.transition = "all .3s ";
+    }
+    await deleteTodoFromBoard(currentBoardId, task, Id);
+  };
+
   return (
     <>
       <div className={"kanbanBoard-header"}>
@@ -53,9 +69,16 @@ export const Kanban = observer(() => {
             </div>
             <div className={"toDo-items"}>
               {values.data.map((item, key) => (
-                <div className={"items"} key={key}>
+                <div className={"items"} key={item.id}>
                   {item[key].ToDo.map((i: { task: string }, key: number) => (
-                    <div className={"item"} key={key}>
+                    <div className={"item"} key={key} ref={todoItem}>
+                      <span
+                        onClick={(event: React.MouseEvent<HTMLSpanElement>) =>
+                          deleteFromBoard(i.task)
+                        }
+                      >
+                        <img src={deleteButton} />
+                      </span>
                       <p key={key}>{i.task}</p>
                     </div>
                   ))}
