@@ -1,0 +1,48 @@
+.addParticipantsForm-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background: none;
+}
+.addParticipantsForm-wrapper .addParticipants-items {
+  background: #171717;
+  border-radius: 0.5rem;
+  width: 50rem;
+  height: auto;
+}
+.addParticipantsForm-wrapper .addParticipants-items .item {
+  display: flex;
+  background: none;
+  padding: 1.5rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addParticipantsForm-wrapper .addParticipants-items .item:hover {
+  background: #565555;
+  transition: all 0.3s ease-in-out;
+}
+.addParticipantsForm-wrapper .addParticipants-items .item p {
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+}
+.addParticipantsForm-wrapper .addParticipants-items .item .item-add {
+  background: none;
+  padding: 1rem;
+}
+.addParticipantsForm-wrapper .addParticipants-items .item .item-add button {
+  width: 10rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  color: black;
+  background: white;
+}
+.addParticipantsForm-wrapper .addParticipants-items .item .item-add button:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=addParticipants.css.map */

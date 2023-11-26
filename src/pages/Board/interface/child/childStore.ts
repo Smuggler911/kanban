@@ -5,10 +5,14 @@ import React from "react";
 type list = {
   task: string;
 };
+type Participants = {
+  name: string;
+};
 
 interface board {
   id: number;
   name: string;
+  participants: Array<Participants>;
   ToDo: Array<list>;
   inProgress: Array<list>;
   Done: Array<list>;
@@ -19,12 +23,16 @@ interface board {
 type data = {
   data: Array<board>;
 };
+
 export default class Board {
   public static values: data = observable({
     data: [],
   });
   public static toDo: list = {
     task: "",
+  };
+  public static participant: Participants = {
+    name: "",
   };
   public static getBoard = autorun(async () => {
     const response = await axios.get("http://localhost:8000/Board");
@@ -136,5 +144,30 @@ export default class Board {
         }
       }
     });
+  };
+  public static addParticipant = async (
+    name: string,
+    key: number,
+    id: number,
+  ) => {
+    this.participant.name = name;
+    try {
+      await runInAction(async () => {
+        await axios.put(
+          `http://localhost:8000/Board/${id}`,
+          this.values.data.map((item) => {
+            item[key].participants.push(this.participant);
+            return item[key];
+          }),
+        );
+      });
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        const axiosError = error as AxiosError;
+        console.log("Error:", axiosError.message);
+      } else {
+        console.log("Error:", error);
+      }
+    }
   };
 }

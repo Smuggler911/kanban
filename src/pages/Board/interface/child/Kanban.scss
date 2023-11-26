@@ -5,19 +5,52 @@ body {
 }
 
 .kanbanBoard-header {
-  background: none;
+  display: flex;
+  width: 100vw;
+  background-color: $nameBg;
 
   & .kanban-name {
     padding-left: 13rem;
-    background-color: $nameBg;
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     padding-bottom: 0.5rem;
+    background-color: $nameBg;
 
     & h1 {
       background: none;
       color: $nameColor;
-
       font-size: 1rem;
+    }
+  }
+
+  & .kanbanBoard_addParticipants {
+    background: none;
+    margin-left: 80rem;
+    display: flex;
+    padding: 1rem;
+
+    & p {
+      background: none;
+      color: white;
+      padding-top: 0.5rem;
+      padding-right: 1rem;
+    }
+
+    & button {
+      background: white;
+      border: none;
+      border-radius: 50%;
+
+      & img {
+        background: none;
+        width: 2rem;
+        height: 1.875rem;
+        padding-top: 0.2rem;
+      }
+
+      &:hover {
+        transform: scale(110%);
+        transition: all .3s;
+      }
     }
   }
 }
@@ -166,11 +199,12 @@ body {
   align-items: center;
   transition: all 0.3s ease-in-out;
   display: grid;
+
   & .items {
     background: none;
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     transition: all 0.3s ease-in-out;
     gap: 1rem;
 
@@ -211,4 +245,8 @@ body {
       }
     }
   }
+}
+
+.participantsForm {
+  display: none;
 }

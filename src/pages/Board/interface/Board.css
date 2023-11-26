@@ -42,7 +42,8 @@
 }
 .allKanbanBoards-section .allKanbanBoards-items a {
   width: auto;
-  padding: 1rem 1rem 1rem 5rem;
+  text-align: center;
+  padding: 1rem;
   font-size: 1rem;
   border: 2px solid black;
   border-radius: 0.5rem;
